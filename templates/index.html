@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+
+    .password{
+        font-family: "Courier Prime";
+    }
+    </style>
+</head>
+
+<body style="padding: 14px 14px;">
+    <h1>Password Generator</h1>
+    <form method="POST">
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Select password length</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="length">
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Generate Password</button>
+
+    </form><br>
+    <div style="max-width: max-content;">
+        
+    <h5>Generated Password: </h5>
+        <hr>
+    <h4 class="password">
+    {{ passcode }}
+    </h4></div>
+    <small>Remember, your password is one of the billions of passwords that this tools can generate. Usually, the passwords are easy to guess for professional hackers but this tool generates unimaginable passwords!</small>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
